@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-rich-black: #000F0B;
+  --color-dark-green: #112221;
+  --color-bangladesh-green: #00BC4C;
+  --color-mountain-meadow: #22C55E;
+  --color-caribbean-green: #00E8CF;
+  --color-anti-flash-white: #F0F2F0;
+  --color-forest: #054938;
+  --color-basil: #094534;
+  --color-mint: #3FEBD0;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-rich-black);
+  color: var(--color-anti-flash-white);
+}
+
+.btn-primary {
+  @apply bg-[#22C55E] hover:bg-[#00BC4C] text-white font-bold py-2 px-4 rounded transition-colors;
+}
+
+.input-field {
+  @apply bg-[#054938] border-[#094534] text-white rounded-lg p-2 w-full focus:ring-2 focus:ring-[#3FEBD0] focus:border-transparent;
+}
+
+.form-label {
+  @apply block text-sm font-medium text-[#F0F2F0] mb-1;
+}
